@@ -220,11 +220,19 @@ main {
     .login-container.move .form-register{
         transform: translateX(0%);
     }
+    a.social-icon{
+        margin: 10px 5px;
+    }
+    .form-input{
+        margin-top: 10px;
+    }
 
     .form-button{
         background-color: var(--primay-color);
         color: var(--secundary-color);
         border-color: var(--secundary-color);
+        margin-top: 20px;
+        padding: 5px;
     }
     .mobile-text{
         display: block;
