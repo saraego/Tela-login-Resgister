@@ -7,7 +7,7 @@
     --icon-color: #F3F3F3
 }
 
-.mobile-text{
+.mobile-text {
     display: none;
 }
 
@@ -60,17 +60,18 @@ main {
 }
 
 .form-register {
-   transform: translateX(-100%);
-   z-index: -1;
-   opacity: 0;
+    transform: translateX(-100%);
+    z-index: -1;
+    opacity: 0;
 }
 
-.login-container.move .form-login{
+.login-container.move .form-login {
     transform: translateX(100%);
     z-index: -1;
     opacity: 0;
 }
-.login-container.move .form-register{
+
+.login-container.move .form-register {
     transform: translateX(0%);
     opacity: 1;
     z-index: 1;
@@ -80,9 +81,10 @@ main {
 .form-title {
     font-size: 3rem;
     font-weight: 400;
-    
+
 }
-.form-title-light{
+
+.form-title-light {
     color: var(--text-color-light);
 }
 
@@ -115,14 +117,14 @@ main {
 }
 
 /*Form inputs*/
-.form-inputs-container{
+.form-inputs-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 /*Inputs*/
-.form-input{
+.form-input {
     border: none;
     background-color: var(--icon-color);
     padding: 10px 20px;
@@ -131,13 +133,12 @@ main {
 }
 
 /*Button*/
-.form-button{
+.form-button {
     width: 144px;
-    height:40px;
-    padding:5px ;
+    height: 40px;
     text-align: center;
     border: 2px solid var(--primay-color);
-    border-radius:40px ;
+    border-radius: 40px;
     background-color: transparent;
     font-size: 1rem;
     font-weight: 800;
@@ -145,20 +146,29 @@ main {
     cursor: pointer;
     transition: 1s;
 }
-.form-button:hover{
+
+.form-button:hover {
     background-color: var(--primay-color);
     color: var(--secundary-color);
 }
 
-.form-button-light{
+button.arrumar {
+    line-height: 20px;
+    padding: 10px 20px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.form-button-light {
     border: 2px solid var(--text-color-light);
     color: var(--text-color-light);
 }
+
 /*Form inputs*/
 
 
 /*Overlay - container*/
-.overlay-container{
+.overlay-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -171,84 +181,91 @@ main {
     z-index: 10;
 
 }
+
 /*overlay-1*/
-.overlay{
+.overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding:45px;
+    padding: 45px;
     background-color: var(--primay-color);
     transition: 1s;
 
 }
 
-.login-container.move .overlay-container{
+.login-container.move .overlay-container {
     transform: translateX(0%);
 }
 
-.login-container.login-container.move .overlay:nth-child(2){
+.login-container.login-container.move .overlay:nth-child(2) {
     z-index: -1;
     opacity: 0;
 }
+
 /*Overlay - container*/
 
 
 /*Media query- resposividade*/
 
-@media screen and (max-width:768px){
-    .overlay-container{
+@media screen and (max-width:768px) {
+    .overlay-container {
         display: none;
     }
 
-    .login-container{
+    .login-container {
         width: 75vw;
         height: 75vh;
     }
 
-    .form{
+    .form {
         width: 100%;
         justify-content: space-evenly;
     }
-    .form-register{
+
+    .form-register {
         position: absolute;
         transform: translateX(100%);
         background-color: var(--primay-color);
         color: var(--secundary-color);
     }
-    .login-container.move .form-register{
+
+    .login-container.move .form-register {
         transform: translateX(0%);
     }
-    a.social-icon{
+
+    a.social-icon {
         margin: 10px 5px;
     }
-    .form-input{
+
+    .form-input {
         margin-top: 10px;
     }
 
-    .form-button{
+    .form-button {
         background-color: var(--primay-color);
         color: var(--secundary-color);
         border-color: var(--secundary-color);
         margin-top: 20px;
     }
-    .mobile-text{
+
+    .mobile-text {
         display: block;
     }
-    .mobile-text a{
+
+    .mobile-text a {
         font-weight: 900;
         color: inherit;
     }
 }
 
-@media  (max-width:480px) {
-    .login-container{
+@media (max-width:480px) {
+    .login-container {
         width: 100vw;
         height: 100vh;
         box-shadow: none;
     }
 }
-
